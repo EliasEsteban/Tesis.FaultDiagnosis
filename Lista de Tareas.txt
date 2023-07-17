@@ -1,0 +1,23 @@
+1 - Analisis del porblema y del set de Datos:
+ 	- Leer el articulo de presentacion de los datos 
+	- Visualizar y analizar los datos con mathplotlib
+2 - Preprocesamiento:
+	- Realizar un Dawn Sample para reducir la cantidad de medciones.
+	- Obtener los indicadores de degradación.(Redes Neuronales)
+	- Hallar la media de las mediciones de cada ciclo.
+	
+
+3 - Aplico algoritmos de clusterin para identificar los verdaderos fallos.(No arrojo diferencias significativas a las originales)
+
+4 - Me quedo con el ultimo ciclo de cada motor para realizar una clasificación empleando algoritmos de aprendizaje supervizado mas empleados.
+  	- Normalizo los datos con Z-Score
+	- Utilizo GridSearch para ajustar los hyper parametros de Ramdon Fores , Knn y SVM
+	- Ensamblo los anteriores algoritmos con Votin Clasifier	
+	- Evaluo los resultados con validacion cruzada y una matriz de confucion 
+
+A partir de ahora
+- Utilización de PCA para reducir dimencionalidades.
+- Crear una columna que identifique los elementos generales del motor y crear un modelo que logre diferencial las fallas entre ellos.
+- Buscar solucion para el desvalance de clases priorizando la correcta prediccion en los elementos sobre la de todo el motor.
+- Elavorar un pipe line que resuma toda la tranformacion necesaria para los datos.
+- Investigacion sobre redes neuronales para clasificacion en Diagnostico de Fallos con cuantificacion de incertidumbre.
